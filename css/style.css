@@ -1,0 +1,333 @@
+.clearfix:before,
+.clearfix:after {
+ content: " ";
+ display: table;
+}
+
+.clearfix:after {
+ clear: both;
+}
+	
+.wrapper{
+	width: 960px;
+	margin: 0 auto;
+}
+
+div, span, header, footer, nav{
+	box-sizing: border-box;
+}
+
+.unstyled{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.circlying{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+.hide{
+	display: none;
+}
+
+/**/
+
+body.lightbox-on{
+	overflow: hidden;
+}
+
+*{
+	/*border: 1px solid rgba(0, 0, 0, 0.3);*/
+	margin: 0;
+	padding: 0;
+	font-family: 'Droid Sans', sans-serif;
+	/*font-family: 'Oswald', sans-serif;*/
+}
+
+header{
+	/*border: 1px solid #000;*/
+}
+
+header .left{
+	/*border: 1px solid #000;*/
+	float: left;
+	width: 300px;
+	height: 120px;
+	padding-top: 27px;
+}
+
+header .middle{
+	/*border: 1px solid #000;*/
+	float: left;
+	width: 300px;
+	height: 120px;
+	text-align: center;
+	/*padding-top: 30px;*/
+
+}
+
+header input{
+	background: transparent url(../img/lupa.jpg) no-repeat 7px center;
+	/*padding-left: 25px;*/
+	margin-top:30px; 
+	padding: 13px 20px 13px 40px;
+	border: 1px solid #000;
+	width: 218px;
+
+}
+
+header .right{
+	/*border: 1px solid #000;*/
+	float: left;
+	width: 360px;
+	height: 120px;
+	padding-top: 30px;
+}
+
+header .right .shipping{
+	float: right;
+	/*border: 1px solid #000;*/
+	/*margin-top: 30px;*/
+	color: #db441e;
+	font-size: 18px;
+	font-family: 'Oswald', sans-serif;
+}
+
+header .right .shipping span{
+	display: block;
+	margin-top: 5px;
+} 
+
+header .right img{
+	/*border: 1px solid #000;*/
+	float: right;
+	margin: 0 30px;
+}
+
+header .right .bag-description{
+	margin-top: 12px;
+	color: #c1a4b8;
+	float: right;
+	margin-right: 10px;
+	font-size: 20px;
+}
+
+header .right .bag-description strong{
+	color: #db441e;
+	font-size: 20px;
+}
+
+nav {
+	/*border: 1px solid #000;*/
+	background-color: #523468;
+	height: 68px;
+}
+
+nav ul{
+	float: left;
+}
+
+nav ul li{
+	float: left;
+	list-style: none;
+	margin-left: 25px;
+}
+
+nav ul li.darker a{
+	background-color: #422a53;
+	padding: 15px;
+}
+
+nav ul li span{
+	margin-left: 10px;
+}
+
+nav a{
+	color: white;
+	line-height: 68px;
+	text-decoration: none;
+	font-family: 'Oswald', sans-serif;
+}
+
+nav p{
+	float: right;
+	color: #c1a4b8;
+	margin-right: 60px;
+}
+
+nav p i{
+	display: inline-block;
+	margin: 0 15px;
+}
+
+
+.container{
+	/*border: 1px solid #000;*/
+}
+	
+.container h1{
+	margin-bottom: 60px;
+	margin-top: 60px;
+}
+
+.container .product-list{
+	/*border: 1px solid #000;*/
+}
+
+.container .product-list .potions-product{
+	/*border: 1px solid #000;*/
+	width: 33.33%;
+	float: left;
+	text-align: center;
+	margin-bottom: 80px;
+	margin-top: 20px;
+}
+
+.container .potions-product img{
+	width: 250px;
+}
+
+.container .potions-product a{
+	text-decoration: none;
+}
+
+.container .potions-product span{
+	color: #db441e;
+}
+
+footer {
+	/*border: 1px solid #000;*/
+	background-color: #e6e6e6;
+	padding-top: 30px;
+	padding-bottom: 55px;
+}
+
+footer .left{
+	float: left;
+	width: 55%;
+}
+
+footer .left li{
+	float: left;
+}
+
+footer .footer-links{
+	padding-top: 20px;
+}
+
+footer .left .footer-links a{
+	text-decoration: none;
+}
+
+footer .left .footer-links h3{
+	color: #db441e;
+	padding-right: 30px;
+}
+
+footer .left .social-networks li{
+	padding-right: 25px;
+	padding-top: 35px;
+	padding-bottom: 50px;
+}
+
+footer .right{
+	float: right;
+	width: 45%;
+	background-color: white;
+	padding:34px 18px;
+}
+
+footer .right h4{
+	padding-bottom: 20px;
+}
+
+footer .right input{
+	margin-top: 20px;
+	padding: 10px 10px;
+	border: 1px solid #000;
+	width: 240px;
+}
+
+footer .right button{
+	background-color: #d73a1e;
+	padding: 12px 30px;
+	border: none;
+	color: white;
+}
+
+footer .left p{
+	color: #666;
+	font-family: 'Oswald', sans-serif;
+}
+
+.lightbox{
+	background: rgba(0, 0, 0, 0.8);
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+
+.lightbox.show{
+	display: block;
+}
+
+.lightbox .lightbox-content{
+	width: 713px;
+	height: 522px;
+	background-color: white;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	margin-left: -356.5px;
+	margin-top: -261px;
+	padding-top: 50px; 
+}
+
+.lightbox .lightbox-content a{
+	position: absolute;
+	top: 0;
+	right: 0;
+	text-decoration: none;
+	padding: 8px;
+	color: black;
+}
+
+.lightbox .lightbox-img{
+	/*border: 1px solid #000;*/
+	width: 428px;
+	float: left;
+}
+
+.lightbox .lightbox-img img{
+	max-width: 100%;
+}
+
+.lightbox .lightbox-info{
+	/*border: 1px solid #000;*/
+	width: 285px;
+	float: left;
+}
+
+.lightbox .lightbox-info .title,
+.lightbox .lightbox-info .product-use,
+.lightbox .lightbox-info ul{
+	margin-top: 25px;
+}
+
+.lightbox .lightbox-info .product-price strong{
+	color: #d73a1e;
+} 
+
+.lightbox .lightbox-info button{
+	background-color: #d73a1e;
+	padding: 12px 30px;
+	border: none;
+	color: white;
+	margin-top: 25px;
+}
